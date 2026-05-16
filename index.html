@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Premium Casa de Carnes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="loader" id="loader" aria-live="polite">
+    <div class="loader__mark">Premium</div>
+    <div class="loader__bar" aria-hidden="true">
+      <span id="loaderBar"></span>
+    </div>
+    <p id="loaderText">Carregando experiência 0%</p>
+  </div>
+
+  <main>
+    <section class="cinema" id="cinema" aria-label="Experiência cinematográfica da Premium Casa de Carnes">
+      <canvas id="frameCanvas"></canvas>
+      <div class="grain" aria-hidden="true"></div>
+      <div class="vignette" aria-hidden="true"></div>
+
+      <div class="scene scene--hero" data-start="0" data-end="0.23">
+        <p class="eyebrow">Casa de carnes premium</p>
+        <h1>Premium Casa de Carnes</h1>
+        <p>Carnes nobres para paladares exigentes</p>
+        <a class="button button--gold" href="#cortes">Conheça nossos cortes</a>
+      </div>
+
+      <div class="scene scene--left" data-start="0.20" data-end="0.40">
+        <p>Experiência premium desde a entrada</p>
+      </div>
+
+      <div class="scene scene--right" data-start="0.38" data-end="0.58">
+        <p>Ambiente moderno, elegante e sofisticado</p>
+      </div>
+
+      <div class="scene scene--left scene--compact" data-start="0.55" data-end="0.73">
+        <p>Atendimento exclusivo e cortes selecionados</p>
+      </div>
+
+      <div class="scene scene--final" data-start="0.72" data-end="1">
+        <p class="eyebrow">Seleção especial</p>
+        <h2>Os cortes mais nobres do mercado</h2>
+        <p>Wagyu, Tomahawk, Prime Rib, Picanha Premium e Dry Aged</p>
+        <strong>Qualidade que se vê. Sabor que fica.</strong>
+      </div>
+    </section>
+
+    <section class="final-section" id="cortes">
+      <div class="final-section__content">
+        <p class="eyebrow">Premium desde o primeiro corte</p>
+        <h2>Premium Casa de Carnes</h2>
+        <p>Uma experiência premium para quem valoriza carne de verdade.</p>
+        <div class="actions">
+          <a class="button button--gold" href="https://wa.me/5500000000000" target="_blank" rel="noopener">Falar no WhatsApp</a>
+          <a class="button button--line" href="https://www.google.com/maps/search/?api=1&query=Premium%20Casa%20de%20Carnes" target="_blank" rel="noopener">Ver localização</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
