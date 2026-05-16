@@ -11,7 +11,7 @@ const totalFrames = 240;
 
 // Os frames reais deste projeto estao em .png. Troque para "jpg" se exportar nessa extensao.
 const frameExtension = "png";
-const imageBasePath = window.location.protocol === "file:" ? "images" : "/images";
+const imageBasePath = "images";
 const framePath = (index) => `${imageBasePath}/ezgif-frame-${String(index).padStart(3, "0")}.${frameExtension}`;
 
 const frames = [];
